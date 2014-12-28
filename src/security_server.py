@@ -1,14 +1,11 @@
 __author__ = 'kevin'
 
-class ChatServer:
+class SercuityServer:
 	
 	clients = []
 
     def __init__(self):
         pass
 
-
-
     def join_chatroom(self):
-
-    def 
+    	pass

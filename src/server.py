@@ -3,7 +3,7 @@ from async.server import *
 from threaded.server import *
 from helpers import *
 
-def lab2_handler(server, (sock, addr)):
+def sercurity_server_handler(server, (sock, addr)):
     data = LithiumHelper.recv_all(sock)
     data = data.replace("\r", "")
     
@@ -19,7 +19,7 @@ def lab2_handler(server, (sock, addr)):
 
 def start_server():
     # Start the server in thread pool mode
-    LithiumAsyncServer('localhost', int(sys.argv[1]), lab2_handler)
+    LithiumAsyncServer('localhost', int(sys.argv[1]), sercurity_server_handler)
     asyncore.loop()
 
 if __name__ == '__main__':
